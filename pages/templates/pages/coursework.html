@@ -14,28 +14,34 @@
 <body>
     <header><a href="">Yousef Maitah</a></header>
     <nav>
-        <a href="">Home</a>
-        <!-- <a href="./experience">Experience</a> -->
-        <a href="./coursework">Coursework</a>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'coursework' %}">Coursework</a>
         <a href="{% url 'resume' %}" target="_blank" rel="noreferrer noopener">Resume</a> 
-        <a href="./other">Other</a>
+        <a href="{% url 'other' %}">Other</a>
     </nav>
-    <!-- <main>
-        <section id="about" style="min-width:0%">
-            <h1>About</h1>
-            <p>I am currently employed by General Motors as a hardware engineering intern.</p>
-            <p>I am pursuing my Bachelor's degree in Electrical Engineering at the University of Michigan, with an anticipated graduation date of December 2025.</p>
-            <p>Previously, I completed two internships at Nexteer Automotive, where I contributed to the validation of electric power steering systems.</p>
-            <p><b>Goal:</b> work on innovative projects that make a meaningful impact on the world.</p>
-            <center><p>
-                <table>
-                    <tr>
-                        <td style="text-align: center"><a href="mailto:yousefm@umich.edu" target="_blank" rel="noreferrer noopener"><img src="img/mail.png" height="50" width="50" alt="Email"></a></td>
-                        <td style="text-align: center"><a href="http://linkedin.com/in/yousef-maitah/" target="_blank" rel="noreferrer noopener"><img src="img/linkedin.png"  height="50" width="50" alt="LinkedIn"></a></td>
-                        <td style="text-align: center"><a href="http://github.com/ymaitah" target="_blank" rel="noreferrer noopener"><img src="img/github.png"  height="50" width="50" alt="GitHub"></a></td>
-                    </tr>
-                </table>
-            </p></center>
+    <main>
+        <section id="coursework">
+            <h2>Coursework</h2>
+            <ul class="hyphen-list">
+              <li>EECS 183: Elementary Programming Concepts</li>
+              <li>EECS 200: Electrical Engineering Systems Design I</li>
+              <li>EECS 201: Computer Science Pragmatics</li>
+              <li>EECS 215: Introduction to Electrical Circuits</li>
+              <li>EECS 216: Introduction to Signals and Systems</li>
+              <li>EECS 230: Engineering Electromagnetics</li>
+              <li>EECS 250: Electrical Sensing Systems</li>
+              <li>EECS 270: Introduction to Logic Design</li>
+              <li>EECS 280: Programming and Data Structures</li>
+              <li>EECS 312: Digital Integrated Circuits</li>
+              <li>EECS 370: Introduction to Computer Organization</li>
+              <li>EECS 428: Quantum Nanotechnology</li>
+            </ul>
+            <p>Curently Enrolled In (Winter 2025):</p>
+            <ul class="hyphen-list">
+              <li>EECS 301: Probabilistic Methods in Engineering</li>
+              <li>EECS 320: Introduction to Semiconductor Devices</li>
+              <li>EECS 460: Control Systems Analysis and Design</li>
+            </ul>
         </section>
-    </main> -->
+    </main>
 </body>

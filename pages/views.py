@@ -8,14 +8,6 @@ import os
 def home_page_view(request):
     return render(request, "pages/home.html")
 
-# def experience_page_view(request):
-#     context = {
-#         "name": "Yousef",
-#         "job": "Nexteer",
-#         "age": 21,
-#     }
-#     return render(request, "pages/experience.html", context)
-
 def other_page_view(request):
     return render(request, "pages/other.html")
 

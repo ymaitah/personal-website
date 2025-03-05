@@ -7,17 +7,16 @@
     <meta http-equiv='cache-control' content='no-cache'> 
     <meta http-equiv='expires' content='0'> 
     <meta http-equiv='pragma' content='no-cache'>
-    {% load static %}
+    {% load static %} <!-- Load static files here -->
     <link rel="stylesheet" href="{% static 'pages/styles.css' %}"> 
 </head>
 <body>
     <header><a href="">Yousef Maitah</a></header>
     <nav>
-        <a href="">Home</a>
-        <!-- <a href="./experience">Experience</a> -->
-        <a href="./coursework">Coursework</a>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'coursework' %}">Coursework</a>
         <a href="{% url 'resume' %}" target="_blank" rel="noreferrer noopener">Resume</a> 
-        <a href="./other">Other</a>
+        <a href="{% url 'other' %}">Other</a>
     </nav>
     <main>
         <section id="about" style="min-width:0%">
@@ -30,9 +29,9 @@
             <center><p>
                 <table>
                     <tr>
-                        <td style="text-align: center"><a href="mailto:yousefm@umich.edu" target="_blank" rel="noreferrer noopener"><img src="img/mail.png" height="50" width="50" alt="Email"></a></td>
-                        <td style="text-align: center"><a href="http://linkedin.com/in/yousef-maitah/" target="_blank" rel="noreferrer noopener"><img src="img/linkedin.png"  height="50" width="50" alt="LinkedIn"></a></td>
-                        <td style="text-align: center"><a href="http://github.com/ymaitah" target="_blank" rel="noreferrer noopener"><img src="img/github.png"  height="50" width="50" alt="GitHub"></a></td>
+                        <td style="text-align: center"><a href="mailto:yousefm@umich.edu" target="_blank" rel="noreferrer noopener"><img src="{% static 'pages/img/mail.png' %}" height="50" width="50" alt="Email"></a></td>
+                        <td style="text-align: center"><a href="http://linkedin.com/in/yousef-maitah/" target="_blank" rel="noreferrer noopener"><img src="{% static 'pages/img/linkedin.png' %}" height="50" width="50" alt="LinkedIn"></a></td>
+                        <td style="text-align: center"><a href="http://github.com/ymaitah" target="_blank" rel="noreferrer noopener"><img src="{% static 'pages/img/github.png' %}" height="50" width="50" alt="GitHub"></td>
                     </tr>
                 </table>
             </p></center>
